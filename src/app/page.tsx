@@ -8,7 +8,7 @@ import { UserCardProps } from "@/libs/types";
 
 export default function RandomUserPage() {
   // annotate type for users state variable
-  const [users, setUsers] = useState(null);
+  const [users, setUsers] = useState<UserCardProps[] | null>(null);
 
   const [isLoading, setIsLoading] = useState(false);
   const [genAmount, setGenAmount] = useState(1);
